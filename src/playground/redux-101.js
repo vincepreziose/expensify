@@ -19,6 +19,9 @@ const setCount = ( { count } = {}) => ({
   count
 });
 
+// Reducers
+// 1. Reducers are pure functions
+// 2. Never change state or action
 const countReducer = (state = { count: 0 }, action) => {
   switch (action.type) {
     case 'INCREMENT':
